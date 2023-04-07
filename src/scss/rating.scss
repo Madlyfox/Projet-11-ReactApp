@@ -1,0 +1,26 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .on {
+    color: #ff6060;
+  }
+  .off {
+    color: #ccc;
+  }
+}
+
+@media (max-width: 500px) {
+  .star-rating {
+    button {
+      font-size: 25px;
+    }
+  }
+}

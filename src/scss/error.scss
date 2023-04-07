@@ -1,0 +1,35 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+
+  .errContainer {
+    position: relative;
+    height: 100%;
+    padding: 10px 200px;
+    main {
+      justify-self: center;
+      .content {
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 15%;
+        color: #ff6060;
+        .error {
+          font-size: 250px;
+          margin: 0;
+          font-weight: 400px;
+        }
+        .errSub {
+          font-size: 50px;
+        }
+        a {
+          color: #ff6060;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

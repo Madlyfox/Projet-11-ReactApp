@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .links {
+    width: 300px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      color: #ff6060;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+    }
+    .nav-active {
+      position: relative;
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #ff6060;
+        position: absolute;
+        bottom: 5px;
+      }
+    }
+  }
+}
