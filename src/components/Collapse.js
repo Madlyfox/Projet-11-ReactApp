@@ -17,8 +17,8 @@ const Collapse = ({ title, desc }) => {
         <div className="panel-heading">
           <h4 className="panel-title" href="#" onClick={toggle}>
             {title}
-            {open && <img src={ChevronUp} alt="" />}
-            {!open && <img src={ChevronDown} alt="" />}
+            {open && <img src={ChevronDown} alt="" />}
+            {!open && <img src={ChevronUp} alt="" />}
           </h4>
         </div>
         {open && (

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../scss/about.scss";
 import Collapse from "../components/Collapse";
 import { aboutData } from "../data/data";
@@ -25,6 +26,9 @@ const About = () => {
           ))}
         </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

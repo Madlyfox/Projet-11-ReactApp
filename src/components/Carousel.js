@@ -33,7 +33,7 @@ const Carousel = ({ pictures }) => {
         );
       })}
       <p className="number">
-        {current} / {length}
+        {current + 1} / {length}
       </p>
       <div className="right" onClick={nextSlide}>
         <img src={Right} alt="" className="rightArr" />

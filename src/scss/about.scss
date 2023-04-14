@@ -5,7 +5,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .aboutContainer {
-  position: relative;
   padding: 10px 200px;
   header {
     height: 250px;
@@ -29,6 +28,8 @@ body {
   main {
     display: flex;
     justify-content: center;
+    flex-flow: column;
+    margin-bottom: 50px;
 
     .collapseContainer {
       display: flex;
