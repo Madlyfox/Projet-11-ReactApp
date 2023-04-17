@@ -17,7 +17,7 @@ const Detail = () => {
   });
 
   console.log(dataID.id);
-  if (dataID.id != id) {
+  if (!dataID.id === id) {
     window.location.replace("http://localhost:3000/error");
   } else {
     const found = data.find((obj) => {
