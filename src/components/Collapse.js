@@ -5,8 +5,6 @@ import ChevronDown from "../img/chevron.png";
 const Collapse = ({ title, desc }) => {
   const [open, setOPen] = useState(false);
 
-  console.log(desc);
-
   const toggle = () => {
     setOPen(!open);
   };
