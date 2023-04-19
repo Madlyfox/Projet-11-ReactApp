@@ -27,7 +27,10 @@ const Carousel = ({ pictures }) => {
         </div>
         {pictures.map((img, index) => {
           return (
-            <div className={index === current ? "slide active" : "slide"}>
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}
+            >
               {index === current && (
                 <img src={img} alt="" key={index} className="img" />
               )}
@@ -46,7 +49,10 @@ const Carousel = ({ pictures }) => {
       <div className="carousel">
         {pictures.map((img, index) => {
           return (
-            <div className={index === current ? "slide active" : "slide"}>
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}
+            >
               {index === current && (
                 <img src={img} alt="" key={index} className="img" />
               )}

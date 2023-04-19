@@ -8,7 +8,6 @@ export const data = JSON.parse(JSON.stringify(logements));
 
 const Rating = () => {
   let { id } = useParams();
-  console.log(id);
 
   const found = data.find((obj) => {
     return obj.id === `${id}`;

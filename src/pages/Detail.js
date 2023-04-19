@@ -16,10 +16,7 @@ const Detail = () => {
     return e.id;
   });
 
-  console.log(dataID);
-
   if (!dataID.includes(id)) {
-    console.log(id);
     window.location.replace("http://localhost:3000/error");
   } else {
     const found = data.find((obj) => {
