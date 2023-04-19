@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../scss/detail.scss";
-import { useParams, redirect } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import logements from "../data/logements";
 import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
@@ -12,18 +12,19 @@ export const data = JSON.parse(JSON.stringify(logements));
 
 const Detail = () => {
   let { id } = useParams();
-  const dataID = data.find((obj) => {
-    return obj;
+  const dataID = data.map((e) => {
+    return e.id;
   });
 
-  console.log(dataID.id);
-  if (!dataID.id === id) {
+  console.log(dataID);
+
+  if (!dataID.includes(id)) {
+    console.log(id);
     window.location.replace("http://localhost:3000/error");
   } else {
     const found = data.find((obj) => {
       return obj.id === `${id}`;
     });
-
     return (
       <div className="detailContainer">
         <Navbar />
